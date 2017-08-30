@@ -30,8 +30,14 @@ ul.social-links {
     margin: 0.5rem;
 }
 
-.social-links a { opacity: 0.5; }
-.social-links a:hover { opacity: 1; }
+.social-links a {
+  opacity: 0.5;
+  color: #3d3d3d;
+}
+.social-links a:hover {
+  opacity: 1;
+  color: inherit;
+}
 
 
 @media only screen and (max-width: 650px) {

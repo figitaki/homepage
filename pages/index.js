@@ -13,7 +13,7 @@ const socialLinks = [
   { alt: 'Medium', src: '/static/medium.svg', href: 'https://medium.com/@figitaki', color: '#00ab6c' },
   { alt: 'LinkedIn', src: '/static/linkedin.svg', href: 'https://linkedin.com/in/cjanecka', color: '#0077b5' },
   { alt: 'GitHub', src: '/static/github.svg', href: 'https://github.com/figitaki', color: '#333' },
-  { alt: 'SoundCloud', src: '/static/soundcloud.svg', href: 'https://soundcloud.com/figitaki', color: '#ff8800' },
+  { alt: 'SoundCloud', src: '/static/soundcloud.svg', href: 'https://soundcloud.com/mynona_ryder', color: '#ff8800' },
 ]
 
 export default () => (

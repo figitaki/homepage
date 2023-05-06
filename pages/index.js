@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const SocialLink = ({ href, src, alt, color }) => (
   <li style={{ color }}>
@@ -6,15 +6,40 @@ const SocialLink = ({ href, src, alt, color }) => (
       <img src={src} width="24px" height="24px" alt={alt} />
     </a>
   </li>
-)
+);
 
 const socialLinks = [
-  { alt: 'Twitter', src: '/static/twitter.svg', href: 'https://twitter.com/figitaki', color: '#1da1f2' },
-  { alt: 'Medium', src: '/static/medium.svg', href: 'https://medium.com/@figitaki', color: '#00ab6c' },
-  { alt: 'LinkedIn', src: '/static/linkedin.svg', href: 'https://linkedin.com/in/cjanecka', color: '#0077b5' },
-  { alt: 'GitHub', src: '/static/github.svg', href: 'https://github.com/figitaki', color: '#333' },
-  { alt: 'SoundCloud', src: '/static/soundcloud.svg', href: 'https://soundcloud.com/mynona_ryder', color: '#ff8800' },
-]
+  {
+    alt: "Twitter",
+    src: "/twitter.svg",
+    href: "https://twitter.com/figitaki",
+    color: "#1da1f2",
+  },
+  {
+    alt: "Medium",
+    src: "/medium.svg",
+    href: "https://medium.com/@figitaki",
+    color: "#00ab6c",
+  },
+  {
+    alt: "LinkedIn",
+    src: "/linkedin.svg",
+    href: "https://linkedin.com/in/cjanecka",
+    color: "#0077b5",
+  },
+  {
+    alt: "GitHub",
+    src: "/github.svg",
+    href: "https://github.com/figitaki",
+    color: "#333",
+  },
+  {
+    alt: "SoundCloud",
+    src: "/soundcloud.svg",
+    href: "https://soundcloud.com/mynona_ryder",
+    color: "#ff8800",
+  },
+];
 
 export default () => (
   <main>
@@ -27,9 +52,9 @@ export default () => (
     <h1>Carey Janecka</h1>
     <h2>Developer. Designer. Artist.</h2>
     <ul className="social-links">
-      {socialLinks.map((link) =>
-        <SocialLink {...link} />
-      )}
+      {socialLinks.map((link) => (
+        <SocialLink {...link} key={link.alt} />
+      ))}
     </ul>
   </main>
-)
+);
